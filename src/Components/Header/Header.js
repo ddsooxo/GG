@@ -1,17 +1,12 @@
 import React from "react";
 import "./Header.css";
 import logo1 from "../../assets/img/GG-Logo.png";
+import profilePicture from "../../assets/img/2.jpg";
 
 class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <img
-          src={logo1}
-          alt="super cool logo"
-          className="logo"
-          onClick={alert}
-        />
         <div>
           <title>User Dropdown Header</title>
           <link rel="stylesheet" href="./Header.css" />
@@ -22,6 +17,7 @@ class Header extends React.Component {
           />
           <header className="header">
             <div className="header-limiter">
+              <img src={logo1} alt="super cool logo" className="logo" />
               <nav>
                 <a href="#">Current Challenges</a>
                 <a href="#">Previous Challenges</a>
@@ -31,7 +27,7 @@ class Header extends React.Component {
                 </a>
               </nav>
               <div className="header-user-menu">
-                <img src="../../assets/img/2.jpg" alt="User Image" />
+                <img src={profilePicture} alt="User Image" />
                 <ul>
                   <li>
                     <a href="#">Settings</a>
