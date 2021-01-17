@@ -20,6 +20,8 @@
 
 .logo {
   position: left;
+}
+
 img {
   border: 2px;
 }
@@ -145,6 +147,7 @@ img.logo {
   float: left;
   padding: 20px;
   border: 2px solid #70c7be;
+}
 
 .footer {
   width: 100%;
