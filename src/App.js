@@ -53,17 +53,9 @@ class App extends React.Component {
   }
   changeBet() {}
   removeBet(betToRemove) {
-    let isFound = false;
-    this.state.bets.forEach((bet) => {
-      if (betToRemove.id === betToRemove.id) {
-        isFound = true;
-      }
-    });
-    if (isFound) {
-      console.log("Bet Removed: " + betToRemove.name);
-      this.state.bets.pop(betToRemove);
-    }
-    this.setState({ bets: this.state.bets });
+    this.setState((prevState) => ({
+      bets: prevState.bets.filter((bet) => bet.id !== betToRemove.id),
+    }));
   }
   render() {
     return (
@@ -73,9 +65,13 @@ class App extends React.Component {
           <h1>GG</h1>
         </header>
         <p>Competing with your friends for the Greater Good</p>
-
         <div className="btn-group">
-          <Button purpose="Add Bet" onAdd={this.addBet} id="btn" style="width:33.3%"/>
+          <Button
+            purpose="Add Bet"
+            onAdd={this.addBet}
+            id="btn"
+            style="width:33.3%"
+          />
         </div>
         <section className="BetList">
           <BetList
