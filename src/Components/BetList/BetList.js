@@ -11,22 +11,25 @@ class BetList extends React.Component {
   }
   render() {
     const bets = this.props.bets;
-    console.log(bets);
     return (
-      <div className="Betlist">
-        {bets.map((bet) => {
-          return (
-            <section>
-              <Bet
-                bet={bet}
-                id={bet.id}
-                onAdd={this.props.onAdd}
-                onEdit={this.props.onEdit}
-                onRemove={this.props.onRemove}
-              />
-            </section>
-          );
-        })}
+      <div>
+        <section>
+        </section>
+        <div className="Betlist">
+          {bets.map((bet) => {
+            return (
+              <section>
+                <Bet
+                  bet={bet}
+                  id={bet.id}
+                  onAdd={this.props.onAdd}
+                  onEdit={this.props.onEdit}
+                  onRemove={this.props.onRemove}
+                />
+              </section>
+            );
+          })}
+        </div>
       </div>
     );
   }
