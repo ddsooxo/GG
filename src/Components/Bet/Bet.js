@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import './Bet.css'
 
 class Bet extends React.Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class Bet extends React.Component {
         <button>
           Change Bet
         </button>
+        <div class="divider"/>
         <button onClick={() => this.removeBet()}>
           Remove Bet        
         </button>
