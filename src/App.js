@@ -11,6 +11,12 @@ class App extends React.Component {
     this.state = {
       bets: [
         {
+          name: "You are betting with @dee_unicorn",
+          wager: 20,
+          opponent: "Dee",
+          id: 4,
+        },
+        {
           name: "fitness challenge",
           wager: 20,
           opponent: "Manuel",

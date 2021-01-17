@@ -1,4 +1,3 @@
-
 button {
   width: 250px;
   height: 50px;
@@ -11,29 +10,39 @@ button {
   display: inline-block;
   font-size: 16px;
   border: 10;
-
 }
 button:hover {
   background-color: white;
   color: black !important;
 }
-.divider{
-  width:5px;
-  height:auto;
-  display:inline-block;
+.divider {
+  width: 5px;
+  height: auto;
+  display: inline-block;
 }
 .Bet {
-  outline: 5px solid whitesmoke;
-  background-color: gray;
+  /* outline: 0.75px solid whitesmoke; */
+  border-radius: 1.6em;
+  background-color: #efe7bd;
   padding: 20px;
 }
 
-.Bet-information h2{
-  text-transform: uppercase;
-  text-decoration: underline;
+.Bet-information h2 {
+  color: #484742;
+  /* text-transform: capitalize; */
+  /* text-decoration: underline; */
   text-align: left;
+}
+
+.Bet-information p {
+  color: #484742;
+  background-color: rgb(161 190 141 / 55%);
+  border-radius: 0.5em;
+  font-size: 1.75em;
+  font-weight: bold;
 }
 
 p {
   align-items: left;
+  color: #484742;
 }
