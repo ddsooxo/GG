@@ -2,8 +2,8 @@ import React from "react";
 import "./assets/css/main.css";
 import BetList from "./Components/BetList/BetList";
 import BetForm from "./Components/BetForm/BetForm";
-import logo1 from "./assets/img/GG-Logo.png";
 import './App.css'
+import Header from './Components/Header/Header';
 
 class App extends React.Component {
   constructor(props) {
@@ -64,13 +64,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <title>GG</title>
-        <img class='logo' src={logo1} alt="super cool logo"/>
         <br>
         </br>
-        <header id="header">
-          <h1 className="banner">Competing with your friends for the Greater Good</h1>
-        </header>
+        <Header />
         <div className="forms">
           <BetForm 
           onAdd={this.addBet}
