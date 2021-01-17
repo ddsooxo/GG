@@ -3,16 +3,10 @@ import "./BetList.css";
 import Bet from "../Bet/Bet.js";
 
 class BetList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  handleNameChange(e) {
-    this.props.onNameChange(e.target.value);
-  }
   render() {
     const bets = this.props.bets;
     return (
-      <div>
+      <div className="listContainer">
         <section>
         </section>
         <div className="Betlist">
