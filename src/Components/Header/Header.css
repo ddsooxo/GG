@@ -6,6 +6,9 @@
   height: 80px;
   color: #ffffff;
   box-sizing: border-box;
+  position: relative;
+  min-height: auto;
+  min-width: auto;
 }
 
 .header .header-limiter {
@@ -19,13 +22,13 @@
 
 /* Logo */
 .logo {
-  display: block;
-  padding: 50;
+  position: absolute;
+  align-self: left;
   width: 100px;
   height: 100px;
-  display: block;
-  text-indent: -9999px;
-  object-fit: contain;
+  display: inline;
+  left: 15px !important;
+  top: -15px !important;
 }
 
 .header .header-limiter h1 {
@@ -141,7 +144,8 @@
   border-radius: 50%;
   position: absolute;
   top: 6px;
-  max-width: 28px;
+  width: 28px;
+  height: 28px;
   right: 10px;
 }
 

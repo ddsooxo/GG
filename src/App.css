@@ -161,3 +161,8 @@ img.logo {
   opacity: 1;
   text-align: center;
 }
+
+.forms {
+  position: relative;
+  top: 30px;
+}
