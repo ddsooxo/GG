@@ -14,8 +14,6 @@ class BetList extends React.Component {
     console.log(bets)
     return (
       <div className="Betlist">
-        <input defaultValue={"New Bets"} onChange={this.handleNameChange} />
-        <div className="BetList">
           {bets.map((bet) => {
             return (
               <Bet
@@ -28,10 +26,6 @@ class BetList extends React.Component {
               />
             );
           })}
-        </div>
-        <button class="Playlist-save" onClick={this.props.onSave}>
-          SAVE BET
-        </button>
       </div>
     );
   }
