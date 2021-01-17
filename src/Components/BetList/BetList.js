@@ -20,6 +20,7 @@ class BetList extends React.Component {
                   onEdit={this.props.onEdit}
                   onRemove={this.props.onRemove}
                 />
+                <br></br>
               </section>
             );
           })}
