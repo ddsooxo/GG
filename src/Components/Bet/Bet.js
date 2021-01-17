@@ -17,9 +17,6 @@ class Bet extends React.Component {
     let BetToRemove = this.props.bet;
     this.props.onRemove(BetToRemove);
   }
-  renderAction() {
-
-  }
   render() {
     return (
       <div className="Bet">
@@ -27,20 +24,17 @@ class Bet extends React.Component {
           <h2>{this.props.bet.name}</h2>
           <p>
             {" "}
+            {" "}
             {this.props.bet.opponent} | ${this.props.bet.wager}{" "}
           </p>
         </div>
-        <Button
-          purpose="Change Bet"
-          onEdit={this.props.changeBet}
-          id="button2"
-          style="width:33.3%"
-        />
+        <button>
+          Change Bet
+        </button>
         <button onClick={() => this.removeBet()}>
           Remove Bet        
         </button>
         <br></br>
-        {this.renderAction()}
       </div>
     );
   }
