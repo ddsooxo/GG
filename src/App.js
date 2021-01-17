@@ -2,6 +2,7 @@ import React from "react";
 import "./assets/css/main.css";
 import Button from "./Components/Button/Button";
 import BetList from "./Components/BetList/BetList";
+import BetForm from "./Components/BetForm/BetForm";
 import logo1 from "./assets/img/GG-Logo.png";
 
 class App extends React.Component {
@@ -75,18 +76,15 @@ class App extends React.Component {
 
         <p>Competing with your friends for the Greater Good</p>
         <div className="btn-group">
-          <Button
-            purpose="Add Bet"
-            onAdd={this.addBet}
-            id="btn"
-            style="width:33.3%"
+          <BetForm 
+          onAdd={this.addBet}
+          bets={this.state.bets}
           />
         </div>
         <section className="BetList">
           <BetList
             betListName={"Current Challenges"}
             bets={this.state.bets}
-            onAdd={this.addBet}
             onRemove={this.removeBet}
           />
         </section>
