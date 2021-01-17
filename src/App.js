@@ -2,6 +2,8 @@ import React from "react";
 import "./assets/css/main.css";
 import Button from "./Components/Button/Button";
 import BetList from "./Components/BetList/BetList";
+import logo1 from "./assets/img/GG-Logo.png";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -61,6 +63,7 @@ class App extends React.Component {
     return (
       <div>
         <title>GG</title>
+        <img class='logo' src={logo1} />
         <header id="header">
           <h1>GG</h1>
         </header>
