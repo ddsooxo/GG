@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import logo1 from "../../assets/img/GG-Logo.png";
+import profilePicture from "../../assets/img/2.jpg";
 
 class Header extends React.Component {
   render() {
@@ -26,7 +27,7 @@ class Header extends React.Component {
                 </a>
               </nav>
               <div className="header-user-menu">
-                <img src="../../assets/img/GG-Logo.png" alt="User Image" />
+                <img src={profilePicture} alt="User Image" />
                 <ul>
                   <li>
                     <a href="#">Settings</a>
