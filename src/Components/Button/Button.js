@@ -10,7 +10,7 @@ class Button extends React.Component {
     render() {
         return (
           <div className="Button">
-            <button class="Button" onClick={this.props.onSave}>
+            <button class="Button" >
               <h1>{this.props.purpose}</h1>
             </button>
           </div>
