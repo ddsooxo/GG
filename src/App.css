@@ -1,3 +1,14 @@
+.v9_1 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -9,6 +20,12 @@
 
 .logo {
   position: left;
+img {
+  border: 2px;
+}
+
+img.logo {
+  position: absolute;
   width: 95px;
   height: 95px;
   left: 55px;
@@ -128,4 +145,16 @@
   float: left;
   padding: 20px;
   border: 2px solid #70c7be;
+
+.footer {
+  width: 100%;
+  color: rgba(72, 71, 66, 0.6899999976158142);
+  position: fixed;
+  top: 987px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Light;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
 }

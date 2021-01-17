@@ -84,6 +84,18 @@ class App extends React.Component {
             onRemove={this.removeBet}
           />
         </section>
+
+        <div class="footer">
+          <span>
+            <a class="footer-about" href="">
+              {" "}
+              About{" "}
+            </a>
+          </span>
+
+          <a class="footer-contact" href="">  Contact  </a>
+          <p> made with love + hard work | © HackingHornets </p>
+        </div>
       </div>
     );
   }
