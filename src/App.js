@@ -1,5 +1,5 @@
 import React from "react";
-import "./main.css";
+import "./assets/css/main.css";
 import Button from "./Components/Button/Button";
 import BetList from "./Components/BetList/BetList";
 
