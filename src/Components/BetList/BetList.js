@@ -12,7 +12,12 @@ class BetList extends React.Component {
         <div className="Betlist">
           {bets.map((bet) => {
             return (
+              
               <section>
+                <button className="WinButton">
+                  Win
+                </button>
+
                 <Bet
                   bet={bet}
                   id={bet.id}
@@ -20,6 +25,10 @@ class BetList extends React.Component {
                   onEdit={this.props.onEdit}
                   onRemove={this.props.onRemove}
                 />
+                <button className="WinButton">
+                  Lose
+                </button>
+                <br></br>
                 <br></br>
               </section>
             );
