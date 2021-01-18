@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+## Inspiration
+- Our slogan: "be a helping hand for yourself and the world"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We tried to figure out how to make a better impact on the world after the pandemic started affecting the lives of many people. When the pandemic started, many people became demotivated and many charities/non profit organizations started a decline in donors. Also, 72% of all charities are expecting a further decline in 2021.  
 
-## Available Scripts
+## What it does
+Primarily focusing on the importance of charities and non profit organizations, we decided to create a simple, fun and interactive community todo/betting system. A user will be able to create and delete bets with their opponent. Users bet real money which the loser then donates to a charity of the winner's choice. It is really a win-win situation for both opponents. 
 
-In the project directory, you can run:
+## How we built it
+We built this website mainly using ReactJS and Create-React-App as a boilerplate. We tinkered with CSS and JS files to style the website. 
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Challenges we ran into
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+We ran into a plethora of challenges along the way -- from the ever-so-dreaded merge conflicts, to finding framework we could all work on, and even deployment. Nonetheless, our team persisted through the minor obstacles we faced. We learned that -- as a team -- we can go further and solve problems more efficiently. We turned to pair-programming when we ran into code issues. We communicated often and provided feedback on design and code. In the darkest and stressful of times, we turned to our witty humor and dad jokes to lighten up our situation. In retrospect, the challenges we faced were necessary to grow as developers and we are extremely proud of the progress we made during the weekend.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Accomplishments that we are proud of
+- We were able to accomplish several user stories - creating a bet and removing a bet, listing the blocks of bets started. 
+- We also went out of our comfort zone and decided to compete in the pitching competition. 
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## What we learned
+- We learned how to build a website using ReactJS, create prototypes in Figma, and use gitHub. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## What's next for GreaterGood | GG
+We want to implement:
+- a follow/unfollow friend feature
+- sign in and sign out feature 
+- sign up feature 
+- view past challenges 
+- implement charity donation system
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+Our Web app is deployed with Surge.sh and Netlify and then registered under a custom domain with domain.com at greatergood.tech. The domain is still loading and can be found at the following links: 
+- [greatergood.netlify.app](greatergood.netlify.app)
+- [greater-good.surge.sh](greater-good.surge.sh)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+View our demo video [here](https://youtu.be/m2Sk8wiNi5Q).
