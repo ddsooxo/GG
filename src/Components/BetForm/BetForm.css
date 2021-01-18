@@ -2,6 +2,20 @@ input {
     color:black !important;
 }
 
+.input-box{
+    padding: 15px;
+
+}
+
+label{
+    padding-top: 10px;
+    background-color: #70c7be52;
+    border-radius: 0.75em;
+    color: #484742;
+    font-weight: bold;
+    padding: 10px;
+}
+
 button {
     -moz-appearance: none;
     -webkit-appearance: none;

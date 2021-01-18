@@ -49,13 +49,13 @@ class BetForm extends React.Component {
       if (newBet[n] == null) containsNull = true;
     }
     if (!containsNull) {
-        this.props.onAdd(newBet);
-        this.state = {
-          name: null,
-          opponent: null,
-          wager: null,
-          id: this.props.bets.length,
-        }; 
+      this.props.onAdd(newBet);
+      this.state = {
+        name: null,
+        opponent: null,
+        wager: null,
+        id: this.props.bets.length,
+      };
     }
   }
   render() {
@@ -63,11 +63,17 @@ class BetForm extends React.Component {
       <div>
         <div className="container">
           <label>CHALLENGE</label>
-          <input placeholder="Challenge" onChange={this.handleNameChange} />
+          <div className="input-box">
+            <input placeholder="Challenge" onChange={this.handleNameChange} />
+          </div>
           <label>OPPONENT</label>
-          <input placeholder="Name" onChange={this.handleOpponentChange} />
+          <div className="input-box">
+            <input placeholder="Name" onChange={this.handleOpponentChange} />
+          </div>
           <label>CHARITABLE WAGER</label>
-          <input placeholder="Wager" onChange={this.handleWagerChange} />
+          <div className="input-box">
+            <input placeholder="Wager" onChange={this.handleWagerChange} />
+          </div>
           <br></br>
           <button onClick={() => this.addBet()}>Add Bet</button>
         </div>
