@@ -61,7 +61,7 @@ class BetForm extends React.Component {
   render() {
     return (
       <div>
-        <div className="container">
+        <div className="container"  >
           <label>CHALLENGE</label>
           <div className="input-box">
             <input placeholder="Challenge" onChange={this.handleNameChange} />
