@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import "./Bet.css";
 
 class Bet extends React.Component {
   constructor(props) {
@@ -17,30 +18,18 @@ class Bet extends React.Component {
     let BetToRemove = this.props.bet;
     this.props.onRemove(BetToRemove);
   }
-  renderAction() {
-
-  }
   render() {
     return (
       <div className="Bet">
         <div className="Bet-information">
           <h2>{this.props.bet.name}</h2>
-          <p>
-            {" "}
-            {this.props.bet.opponent} | ${this.props.bet.wager}{" "}
-          </p>
+          <p> {this.props.bet.opponent}</p>
+          <p>${this.props.bet.wager} </p>
         </div>
-        <Button
-          purpose="Change Bet"
-          onEdit={this.props.changeBet}
-          id="button2"
-          style="width:33.3%"
-        />
-        <button onClick={() => this.removeBet()}>
-          Remove Bet        
-        </button>
+        <button>Change Bet</button>
+        <div class="divider" />
+        <button onClick={() => this.removeBet()}>Remove Bet</button>
         <br></br>
-        {this.renderAction()}
       </div>
     );
   }

@@ -1,3 +1,39 @@
+.forms {
+  overflow: hidden !important;
+  height: 544px;
+  margin: 50px;
+  width: 544px;
+
+  border-radius: 5em;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  /* width: 37%; */
+  max-height: 950px;
+  padding: 2.27rem 1.16rem;
+  background-color: #e0e0e0;
+  /* background-color: rgba(1, 12, 63, 0.7); */
+  /* box-shadow: 0 4px 2px 2px #000000; */
+  /* width: 50%; */
+  float: left;
+  padding: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* border: 2px solid #70c7be; */
+}
+
+.v9_1 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +41,22 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.logo {
+  position: left;
+}
+
+img {
+  border: 2px;
+}
+
+img.logo {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  left: 55px;
+  top: 39px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -37,7 +89,7 @@
   }
 }
 .btn-group button {
-  background-color: #4CAF50; /* Green background */
+  background-color: #4caf50; /* Green background */
   border: 1px solid green; /* Green border */
   color: white; /* White text */
   padding: 10px 24px; /* Some padding */
@@ -74,17 +126,55 @@
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  @media (prefers-reduced-motion: reduce) {
-    .btn {
-      transition: none; } }
-  .btn:hover {
-    color: #212529;
-    text-decoration: none; }
-  .btn:focus, .btn.focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .btn.disabled, .btn:disabled {
-    opacity: 0.65; }
-  .btn:not(:disabled):not(.disabled) {
-    cursor: pointer; }
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
+.btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+.btn:focus,
+.btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.btn.disabled,
+.btn:disabled {
+  opacity: 0.65;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.BetList {
+  background: #c7d8ce;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 50%;
+  float: left;
+  padding: 20px;
+  border-radius: 0.24 em;
+  /* border: 0.75px solid #edf3f2; */
+}
+
+.footer {
+  width: 100%;
+  color: rgba(72, 71, 66, 0.6899999976158142);
+  position: fixed;
+  top: 987px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Light;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+
+.forms {
+  position: relative;
+  top: 65px;
+}

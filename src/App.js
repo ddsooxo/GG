@@ -1,13 +1,21 @@
 import React from "react";
 import "./assets/css/main.css";
-import Button from "./Components/Button/Button";
 import BetList from "./Components/BetList/BetList";
+import BetForm from "./Components/BetForm/BetForm";
+import './App.css'
+import Header from './Components/Header/Header';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       bets: [
+        {
+          name: "You are betting with @dee_unicorn",
+          wager: 20,
+          opponent: "Dee",
+          id: 4,
+        },
         {
           name: "fitness challenge",
           wager: 20,
@@ -47,12 +55,14 @@ class App extends React.Component {
     this.removeBet = this.removeBet.bind(this);
   }
   addBet(newBet) {
-    console.log("Bet added: " + newBet.name);
     this.state.bets.push(newBet);
     this.setState({ bets: this.state.bets });
   }
   changeBet() {}
   removeBet(betToRemove) {
+    this.state.bets.forEach((bet) => {
+      console.log('BET ID: ' + bet.id);
+    })
     this.setState((prevState) => ({
       bets: prevState.bets.filter((bet) => bet.id !== betToRemove.id),
     }));
@@ -60,27 +70,34 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <title>GG</title>
-        <header id="header">
-          <h1>GG</h1>
-        </header>
-        <p>Competing with your friends for the Greater Good</p>
-        <div className="btn-group">
-          <Button
-            purpose="Add Bet"
-            onAdd={this.addBet}
-            id="btn"
-            style="width:33.3%"
+        <br>
+        </br>
+        <Header />
+        <div className="forms">
+          <BetForm 
+          onAdd={this.addBet}
+          bets={this.state.bets}
           />
         </div>
         <section className="BetList">
           <BetList
             betListName={"Current Challenges"}
             bets={this.state.bets}
-            onAdd={this.addBet}
             onRemove={this.removeBet}
           />
         </section>
+
+        <div class="footer">
+          <span>
+            <a class="footer-about" href="">
+              {" "}
+              About{" "}
+            </a>
+          </span>
+
+          <a class="footer-contact" href="">  Contact  </a>
+          <p> made with love + hard work | © HackingHornets </p>
+        </div>
       </div>
     );
   }
